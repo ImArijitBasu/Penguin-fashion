@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <style>
+        
         .font-para {
             font-family: "Roboto", sans-serif;
         }
@@ -17,20 +18,23 @@
         .font-new {
             font-family: "Bebas Neue", sans-serif;
         }
-
-        .btn {
-            @apply
+        .font-high{
+            color: #363958;
         }
+        .font-low{
+            color: #3E3E3E;
+        }
+        
 
     </style>
 </head>
 
-<body class="">
+<body class="font-para">
    <header class="bg-orange-50">
     <div class=" mx-auto flex flex-col max-w-screen-lg px-5">
-        <nav class="flex justify-between w-screen-2xl mt-8 items-center">
-            <div class=" w-1/2 lg:w-2/6 mr-5"><img src="./icons/logo.png" alt=""></div>
-            <ul class="flex space-x-6 uppercase text-sm align-middle font-para">
+        <nav class="flex justify-between w-screen-2xl mt-8 items-center flex-wrap">
+            <div class=" w-1/2 lg:w-2/6 mr-5 min-w-40"><img src="./icons/logo.png" alt=""></div>
+            <ul class="flex space-x-6 uppercase text-sm align-middle font-para font-low">
                 <li>home</li>
                 <li>product</li>
                 <li>about us</li>
@@ -41,19 +45,126 @@
         <div class="banner flex mt-20 max-w-screen-2xl mx-auto items-center mb-20 flex-col sm:flex-row">
             <!-- banner elements  -->
             <div class=" sm:w-1/2">
-                <h1 class=" text-7xl font-new uppercase max-w-96 mb-5"><span class="text-[#FABE4C]">Be the Penguins</span>
+                <h1 class=" text-7xl font-new uppercase max-w-96 mb-5 font-high"><span class="text-[#FABE4C]">Be the Penguins</span>
                     of Winter</h1>
-                    <p class=" text-[#3E3E3E] font-regular mb-5" > Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, repudiandae.</p>
-                    <button class="uppercase flex items-center bg-gradient-to-r from-green-500 to-green-800 text-white font-bold rounded-lg px-5 py-2"><img class="w-10" src="./icons/shopping-cart 1.png" alt=""> buy now</button>
+                    <p class=" text-[#3E3E3E] font-regular mb-5"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, repudiandae.</p>
+                    <button class=" uppercase flex items-center bg-gradient-to-r from-green-500 to-green-800 text-white font-bold rounded-lg px-5 py-2"><img class="w-10" src="./icons/shopping-cart 1.png" alt=""> buy now</button>
             </div>
             <div class=""><img src="./images/model.png" alt=""></div>
         </div>
     </div>
    </header>
-    <main>
-
+    <main class="my-16">
+        <!-- women section  -->
+         <div class="mx-auto max-w-screen-lg px-5 mb-20">
+            <h1 class="font-new font-high text-5xl mb-5 sm:text-left text-center">Women jacket</h1>
+            <!-- card container  -->
+            <div class="grid sm:grid-cols-3 grid-cols-1 gap-5">
+                <!-- cards -->
+                <div class="shadow-2xl p-10 rounded-3xl">
+                    <img class="bg-stone-200 rounded-3xl w-80 p-5 mb-5" src="./images/jacket-1.png" alt="">
+                    <h1 class="font-bold font-high text-2xl pb-3">Yellow Coat Jacket</h1>
+                    <p class="font-low mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, magni.</p>
+                    <div class="flex items-center justify-between">
+                        <p class="text-[#FABE4C] text-4xl font-extrabold">$234</p>
+                        <button class=" uppercase flex items-center bg-gradient-to-r from-green-500 to-green-800 text-white font-bold rounded-lg px-5 py-2"><img class="w-10" src="./icons/shopping-cart 1.png" alt=""> buy now</button>
+                    </div>
+                </div>
+                <div class="shadow-2xl p-10 rounded-3xl">
+                    <img class="bg-stone-200 rounded-3xl w-80 p-5 mb-5" src="./images/jacket-2.png" alt="">
+                    <h1 class="font-bold font-high text-2xl pb-3">Yellow Coat Jacket</h1>
+                    <p class="font-low mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, magni.</p>
+                    <div class="flex items-center justify-between">
+                        <p class="text-[#FABE4C] text-4xl font-extrabold">$234</p>
+                        <button class=" uppercase flex items-center bg-gradient-to-r from-green-500 to-green-800 text-white font-bold rounded-lg px-5 py-2"><img class="w-10" src="./icons/shopping-cart 1.png" alt=""> buy now</button>
+                    </div>
+                </div>
+                <div class="shadow-2xl p-10 rounded-3xl">
+                    <img class="bg-stone-200 rounded-3xl w-80 p-5 mb-5 " src="./images/jacket-3.png" alt="">
+                    <h1 class="font-bold font-high text-2xl pb-3">Yellow Coat Jacket</h1>
+                    <p class="font-low mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, magni.</p>
+                    <div class="flex items-center justify-between">
+                        <p class="text-[#FABE4C] text-4xl font-extrabold">$234</p>
+                        <button class=" uppercase flex items-center bg-gradient-to-r from-green-500 to-green-800 text-white font-bold rounded-lg px-5 py-2"><img class="w-10" src="./icons/shopping-cart 1.png" alt=""> buy now</button>
+                    </div>
+                </div>
+            </div>
+         </div>
+         <!-- men section  -->
+         <div class="mx-auto max-w-screen-lg px-5 ">
+            <h1 class="font-new font-high text-5xl mb-5 sm:text-left text-center">men jacket</h1>
+            <!-- card container  -->
+            <div class="grid sm:grid-cols-3 grid-cols-1 gap-5">
+                <!-- cards -->
+                <div class="shadow-2xl p-10 rounded-3xl">
+                    <img class="bg-stone-200 rounded-3xl w-80 p-5 mb-5" src="./images/jacket-4.png" alt="">
+                    <h1 class="font-bold font-high text-2xl pb-3">Yellow Coat Jacket</h1>
+                    <p class="font-low mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, magni.</p>
+                    <div class="flex items-center justify-between">
+                        <p class="text-[#FABE4C] text-4xl font-extrabold">$234</p>
+                        <button class=" uppercase flex items-center bg-gradient-to-r from-green-500 to-green-800 text-white font-bold rounded-lg px-5 py-2"><img class="w-10" src="./icons/shopping-cart 1.png" alt=""> buy now</button>
+                    </div>
+                </div>
+                <div class="shadow-2xl p-10 rounded-3xl">
+                    <img class="bg-stone-200 rounded-3xl w-80 p-5 mb-5" src="./images/jacket-5.png" alt="">
+                    <h1 class="font-bold font-high text-2xl pb-3">Yellow Coat Jacket</h1>
+                    <p class="font-low mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, magni.</p>
+                    <div class="flex items-center justify-between">
+                        <p class="text-[#FABE4C] text-4xl font-extrabold">$234</p>
+                        <button class=" uppercase flex items-center bg-gradient-to-r from-green-500 to-green-800 text-white font-bold rounded-lg px-5 py-2"><img class="w-10" src="./icons/shopping-cart 1.png" alt=""> buy now</button>
+                    </div>
+                </div>
+                <div class="shadow-2xl p-10 rounded-3xl">
+                    <img class="bg-stone-200 rounded-3xl w-80 p-5 mb-5 " src="./images/jacket-6.png" alt="">
+                    <h1 class="font-bold font-high text-2xl pb-3">Yellow Coat Jacket</h1>
+                    <p class="font-low mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, magni.</p>
+                    <div class="flex items-center justify-between">
+                        <p class="text-[#FABE4C] text-4xl font-extrabold">$234</p>
+                        <button class=" uppercase flex items-center bg-gradient-to-r from-green-500 to-green-800 text-white font-bold rounded-lg px-5 py-2"><img class="w-10" src="./icons/shopping-cart 1.png" alt=""> buy now</button>
+                    </div>
+                </div>
+            </div>
+         </div>
     </main>
-    <footer></footer>
+    <footer class="flex mx-auto max-w-screen-lg px-5 mb-20 sm:flex-row flex-col-reverse">
+        <!-- left side / bottom side  -->
+        <div class="sm:w-2/5 w-full">
+            <!-- card  -->
+            <div class="flex items-center shadow-xl rounded-2xl p-7 mb-5">
+                <!-- left side  -->
+                 <img class="w-28 mr-5" src="./icons/house.png" alt="">
+                 <!-- right side  -->
+                  <div class="">
+                    <h1 class="font-high font-extrabold text-lg pb-3">Find the Perfect fit</h1>
+                    <p class="font-low text-base">Everybody is different, which is why we
+                        offer styles for every body.</p>
+                  </div>
+            </div>
+            <div class="flex items-center shadow-xl rounded-2xl p-7 mb-5">
+                <!-- left side  -->
+                 <img class="w-28 mr-5" src="./icons/house.png" alt="">
+                 <!-- right side  -->
+                  <div class="">
+                    <h1 class="font-high font-extrabold text-lg pb-3">Find the Perfect fit</h1>
+                    <p class="font-low text-base">Everybody is different, which is why we
+                        offer styles for every body.</p>
+                  </div>
+            </div>
+            <div class="flex items-center shadow-xl rounded-2xl p-7">
+                <!-- left side  -->
+                 <img class="w-28 mr-5" src="./icons/house.png" alt="">
+                 <!-- right side  -->
+                  <div class="">
+                    <h1 class="font-high font-extrabold text-lg pb-3">Find the Perfect fit</h1>
+                    <p class="font-low text-base">Everybody is different, which is why we
+                        offer styles for every body.</p>
+                  </div>
+            </div>
+        </div>
+
+        <!-- right side / top side  -->
+         <img class="sm:w-3/5 w-full py-24 sm:pl-20 " src="./images/shopping.png" alt="">
+    </footer>
 </body>
 
 </html>
